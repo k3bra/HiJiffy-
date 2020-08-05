@@ -52,7 +52,7 @@ export default {
                 axios.get('/search', {params: {name: this.searchQuery}}).then(response => {
                     self.searchResults = response.data;
                 }).catch(function (error) {
-
+                    console.log(error);
                 });
             }
         },
